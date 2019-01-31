@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>HTML5 DeviceOrientation</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+
+  <meta http-equiv="cache-control" content="no-cache" />
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css?parameter=2" type="text/css">
+
+  <!-- include embedded font awesome (registered)-->
+  <script src="https://use.fontawesome.com/e6dba31602.js"></script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <div id="head">
+    <h1>HTML5 Device Orientation</h1>
+  </div>
+  <div id="buttons">
+    <i id="btn_toggleButton" class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+    <!--<div id="btn_viewtoggle" onclick="toggleButton();">Toggle</div>-->
+  </div>
+  <div id="main">
+    <div id="content_text">
+      <h2>About</h2>
+      <p>DeviceOrientation ist eine Eventspezifikation der Geolocation Arbeitsgruppe vom W3C. Leider wird diese
+        Spezifikation seit dem 30.05.2017 nicht mehr gepflegt
+        (siehe Links: "W3C: DeviceOrientation Event Specification").
+      </p>
+      <p>Allerdings wird diese Spezifikation anscheinend noch von den aktuellen Browsern unterstützt (Stand Aug/2018).
+        Eine Alternative habe ich ansonsten noch nicht gefunden :-(
+      </p>
+
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://www.sitepoint.com/using-device-orientation-html5/">SitePoint: Using Device Orientation in HTML5</a></li>
+        <li><a href="https://developers.google.com/web/fundamentals/native-hardware/device-orientation/">Web Fundamentals (google): Device Orientation & Motion</a></li>
+        <li><a href="https://www.w3.org/TR/orientation-event/">W3C: DeviceOrientation Event Specification</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation">MDN: Detecting device orientation</a></li>
+        <li><a href="https://mdn.mozillademos.org/en-US/docs/Web/API/Detecting_device_orientation$samples/Orientation_example?revision=1375510">MDN: sample</a></li>
+        <li><a href="https://github.com/dele1972/html5devor">my GitHub Projectpage</a></li>
+        <li><a href="http://paletton.com/#uid=73A1g1kvDgnuU9hwMcMsqlBpArzkqWQP04Xw84V2TD++++Snk00fS1Jm80cdf0VaX2e8-kuRe6AcfCwMf3sSd3pgdV">Paletton: Farbpalette für diese Seite</a></li>
+      </ul>
+      <h2>Norden ist nicht immer bei allen Geräten/Browsern 0!</h2>
+      <ul>
+        <li><a href="https://mobiforge.com/design-development/html5-mobile-web-device-orientation-events/">mobiForge: HTML5 for the Mobile Web - Device Orientation Events</a></li>
+        <li><a href="https://github.com/ajfisher/deviceapi-normaliser#readme">github: Device API Normaliser</a></li>
+      </ul>
+      <h2>further Links</h2>
+      <ul>
+        <li><a href="https://github.com/dorukeker/gyronorm.js">GitHub: gyronorm.js</a></li>
+        <li><a href="http://openlayers.org/en/latest/examples/device-orientation.html">OpenLayers Examples</a></li>
+      </ul>
+    </div>
+    <div id="content_action">
+      <div id="doeSupported"></div>
+      <canvas id="myCanvas"></canvas>
+      <!--<canvas id="myCanvas2"></canvas>-->
+    </div>
+  </div>
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <!--<script src="js/plugins.js"></script>-->
+  <script src="js/main.js?v=1.3"></script><!-- https://stackoverflow.com/a/7772567 -->
+  <!--
+    type bei javascript nicht benötigt
+    (https://www.w3schools.com/js/js_conventions.asp
+    'Loading JavaScript in HTML')
+   -->
+
+</body>
+
+</html>
